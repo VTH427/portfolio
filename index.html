@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenny's Portfolio</title>
+  <link rel="icon" href="images/Hand.jpg">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="animation.css">
+  <link rel="stylesheet" href="container-btn.css">
+  <link rel="stylesheet" href="creative-works-card.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script>
+    const playChess = () => {
+      window.open("https://link.chess.com/play/56UZMf");
+    }
+  </script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="header-container__left">
+      <img class="header-container__left--logo"
+        src="images/AVT.jpg"
+        alt="logo wellspring" />
+      <div class="header-container__left--name">Võ Thiên Hương/Jenny</div>
+    </div>
+    <div class="header-container__right">
+      <nav>
+        <ul class="list">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#achievements">Academics</a></li>
+          <li><a href="#my-preferences">My Preferences</a></li>
+          <li><a href="#creative-works">Creative Pieces</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- section intro -->
+
+  <section id="intro">
+    <div id="particles-js"></div>
+
+    <div class="intro__content">
+      <h2 class="intro__content-greeting">HELLO, I'M</h2>
+      <h1 class="intro__content-title">Võ Thiên Hương</h1>
+      <h2 class="intro__content-greeting">(Jenny Võ)</h2>
+      <span class="intro__content-subtitle" id="text_Anim"></span>
+
+      <a class="container-button intro__content-button-play-chess" href="https://link.chess.com/play/56UZMf"
+        target="_blank">
+        <div class="hover bt-1"></div>
+        <div class="hover bt-2"></div>
+        <div class="hover bt-3"></div>
+        <div class="hover bt-4"></div>
+        <div class="hover bt-5"></div>
+        <div class="hover bt-6"></div>
+        <button id="button-play-chess" onclick="playChess()"></button>
+      </a>
+    </div>
+
+
+    <div class="intro__image animate__animated animate__slideInLeft">
+      <img src="images/VTH1.jpg" alt="Hình cá nhân" />
+    </div>
+  </section>
+
+  <!-- About me -->
+
+  <section id="about-me">
+    <div class="about-me__image">
+      <img
+        src="images/IMG.jpg"
+        alt="Hình cá nhân" />
+    </div>
+    <div class="about-me__content">
+      <h2 class="about-me__content--title">
+        <span class="about-me__content--title-text-1">About</span>
+        <span class="about-me__content--title-text-2">me</span>
+      </h2>
+      <p class="about-me__content--description">
+        I grew up in a middle-class home within a nuclear family and am the eldest sister of two siblings. I 
+        have a deep love for mathematics, nature, and animals. I can spend hours looking at the sky or observing 
+        the landscape to find inspiration for my paintings, as well as solving mathematics problems. I truly 
+        enjoy working with children and have a passion for cute objects. I would like to pursue my dream of becoming 
+        a mathematician or a mathematics teacher in the academic environment of the U.S.
+      </p>
+      <div class="about-me__content--info">
+        <!-- Date of Birth  -->
+        <div class="about-me__content--info-item">
+          <span>My Birth:</span>
+          <b>February 4th, 2007</b>
+        </div>
+        <!-- Phone -->
+        <div class="about-me__content--info-item">
+          <span>Dial Me:</span>
+          <b>(+84) 926810279</b>
+        </div>
+        <!-- Email -->
+        <div class="about-me__content--info-item">
+          <span>For business contact me</span>
+          <b> vothienhuong040207@gmail.com </b>
+        </div>
+        <!-- Address -->
+        <div class="about-me__content--info-item">
+          <span>Address:</span>
+          <b>Truong Chinh Street, Pleiku City, Gia Lai Province, Viet Nam</b>
+        </div>
+      </div>
+      <div class="about-me__content--social-network">
+        <!-- Tìm kiếm icon ở đây https://fontawesome.com/search -->
+        <a href="https://www.facebook.com/profile.php?id=100071042948426" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/3670/3670124.png" width="32" alt="">
+        </a>
+        <a href="https://www.instagram.com/lazycatt_040207/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" width="32" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <div class="achievements__subtitle">Academics Achievement</div>
+    <b class="achievements_header">Standardized Tests</b>
+    <div class="achievements__certificate-score">
+      <div class="achievements__certificate-score--item achievements__certificate-score--SAT">
+        <span>SAT:</span>
+        <b>1250/1600</b>
+      </div>
+      <div class="achievements__certificate-score--item achievements__certificate-score--IELTS">
+        <span>IELTS:</span>
+        <b>6.5/9.0</b>
+      </div>
+      <div class="achievements__certificate-score--item achievements__certificate-score--AP-Statistics">
+        <span>GPA</span>
+        <b>9.0/10.0</b>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Preferences -->
+  <section id="my-preferences">
+    <!-- image -->
+    <div class="my-preferences__image">
+      <div class="my-preferences__image-box-left">
+        <img src="images/reading.jpg" alt="" />
+        <img src="images/crochet.jpg" alt="" />
+      </div>
+      <div class="my-preferences__image-box-right">
+        <img src="images/paintingg.jpg" alt="" />
+        <img src="images/Badminton.png" alt="" />
+      </div>
+    </div>
+    <!-- content -->
+    <div class="my-preferences__content">
+      <div class="my-preferences__content--intro">
+        My Preferences
+      </div>
+      <h2 class="my-preferences__content--title">Reading, Painting, Crocheting, Badminton</h2>
+      <p class="my-preferences__content--description">
+        Reading is a sanctuary for my mind, allowing me to escape into different worlds and perspectives. Each book 
+        opens a door to new ideas, enriching my understanding of life and humanity. The kinds of books that I like 
+        most are detective, science fiction, and novels. Books really fuel my curiosity, inspire my creativity, 
+        and help me relax and escape from the hustle and bustle of everyday life.  
+      </p>
+      <p class="my-preferences__content--description">
+        Painting, for me, is a vibrant expression of emotion and thought. With each brushstroke, I explore my inner 
+        landscape, translating feelings into colors and forms. This creative process not only relaxes me but also 
+        serves as a powerful medium for self-discovery and communication, connecting me to others through shared 
+        experiences and visual storytelling.
+      </p>
+      <p class="my-preferences__content--description">
+        Crocheting is a meditative practice that connects creativity with craftsmanship. As I weave yarn into 
+        intricate patterns, I find a sense of peace and accomplishment. Each project, whether small stuffed 
+        animals or a bag, reflects my patience and dedication, reminding me that art can be both functional and 
+        beautiful.
+      </p>
+      <p class="my-preferences__content--description">
+        Playing badminton adds a dynamic rhythm to my life. Badminton is the greatest way to strengthen my bonds 
+        with my friends and family. This sport not only challenges my physical abilities but also sharpens my 
+        strategic thinking. The fast-paced nature of the game keeps me energized and focused. Through badminton, 
+        I cultivate resilience and adaptability, essential traits in both sport and life. 
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Creative Works -->
+  <section id="creative-works">
+    <div class="creative-works--intro">
+      Creative Pieces
+    </div>
+    <h2 class="creative-works--title">Painting Themes</h2>
+
+    <div class="creative-works-card">
+      <a class="card" href="#" target="_blank">
+        <h2>Culture
+        </h2>
+        <div class="card__content">
+          <img src="images/culture.PNG" alt="">
+        </div>
+      </a>
+      <a class="card" href="#" target="_blank">
+        <h2>Nature
+        </h2>
+        <div class="card__content">
+          <img src="images/nature.PNG" alt="">
+        </div>
+      </a>
+      <a class="card" href="#" target="_blank">
+        <h2>Animals
+        </h2>
+        <div class="card__content">
+          <img src="images/animals.PNG" alt="">
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact"></section>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer__content">
+      <img class="footer__content--logo" src="images/AVT.jpg" alt="" />
+      <div class="footer__content--name">Created by Võ Thiên Hương</div>
+      <div class="footer__content--contact">
+        <a href="https://www.facebook.com/profile.php?id=100071042948426&mibextid=LQQJ4d" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/lazycatt_040207/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer__copy-right">
+      Copyright © 2024 All Rights Reserved. Made by Vo Thien Huong
+    </div>
+  </footer>
+  
+  <section class="sticky">
+    <div class="bubbles">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      
+    </div>
+  </section>
+  <!-- add font awesome icon library -->
+  <script src="https://kit.fontawesome.com/d2ae662ec5.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script src="particles.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
