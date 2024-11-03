@@ -9,14 +9,20 @@
 html {
   scroll-behavior: smooth;
 }
-body{
-  background: linear-gradient(180deg, #fff 100vh, #8793ff 200vh, #2b41c0 300vh, #1f3ad0 400vh);
+body {
+  background: linear-gradient(
+    180deg,
+    #fff 100vh,
+    #8793ff 200vh,
+    #2b41c0 300vh,
+    #1f3ad0 400vh
+  );
 }
 img {
   border-radius: 16px;
 }
-a{
-  z-index: 12312312;
+* {
+  z-index: 1001;
 }
 /* css header */
 header {
@@ -109,6 +115,35 @@ ul.list li:hover {
   margin-top: 32px;
   justify-content: center;
 }
+
+.creative-works-card-image {
+  height: 200px;
+  width: auto;
+}
+
+.creative-works-card-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.creative-works-card-container:hover .overlay {
+  opacity: 1;
+}
+
 /* css intro */
 #intro {
   padding: 64px 64px;
