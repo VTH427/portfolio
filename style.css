@@ -13,9 +13,11 @@ body {
   background: linear-gradient(
     180deg,
     #fff 100vh,
-    #8793ff 200vh,
-    #2b41c0 300vh,
-    #1f3ad0 400vh
+    #d375fc 200vh,
+    #8a72b4 300vh,
+    #705a13 400vh,
+    #bbcaf5 660vh,
+    #7e3cc0 800vh
   );
 }
 img {
@@ -183,7 +185,6 @@ ul.list li:hover {
   font-style: normal;
   font-weight: 800;
   line-height: 100px; /* 117.647% */
-  margin-bottom: 24px;
   display: inline-block;
 }
 .intro__content-subtitle {
@@ -193,6 +194,11 @@ ul.list li:hover {
   line-height: 34px; /* 154.545% */
   display: block;
   flex: 1;
+}
+.intro__content-subgreeting{
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 24px;
 }
 .intro__content-button-contact-me {
   display: flex;
@@ -625,4 +631,10 @@ ul.list li:hover {
     bottom: 1080px;
     transform: translateX(-200px);
   }
+}
+
+.level2{
+  margin-top: 50px;
+
+
 }

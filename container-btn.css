@@ -132,7 +132,7 @@
   }
   
   button::after {
-    content: "Chess duel?";
+    content: "Play Skribbl?";
     position: absolute;
     top: 50%;
     left: 50%;
